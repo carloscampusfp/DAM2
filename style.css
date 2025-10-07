@@ -1,56 +1,66 @@
-/* style.css - estilos personalizados de Agencia de Viajes 2025 */
-
-:root {
-  --brand-color: #0d6efd;
-  --accent-color: #ff7e5f;
-}
-
 body {
   background-color: #f8fafc;
   font-family: 'Segoe UI', Arial, sans-serif;
 }
 
-/* Cabecera */
 .navbar {
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
-/* Logo pequeño tipo "AV" */
 .brand-badge {
-  background: var(--brand-color);
-  color: #fff;
+  background-color: #0d6efd;
+  color: white;
   font-weight: bold;
   border-radius: 6px;
   padding: 4px 8px;
   margin-right: 6px;
 }
 
-/* Tarjeta reutilizable */
+.hero {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  text-align: center;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
 .dest-card {
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-  transition: transform 0.2s ease;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 .dest-card:hover {
-  transform: scale(1.02);
+  transform: translateY(-5px);
+  box-shadow: 0 14px 32px rgba(0,0,0,0.15);
 }
 .dest-card img {
-  height: 140px;
+  height: 150px;
   object-fit: cover;
 }
 
 .btn-accent {
-  background: linear-gradient(90deg, var(--accent-color), #feb47b);
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
   color: white;
   border: none;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 .btn-accent:hover {
-  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   color: white;
 }
 
 footer {
   background: #fff;
   box-shadow: 0 -1px 4px rgba(0,0,0,0.05);
+  padding: 1rem 0;
+  text-align: center;
 }
